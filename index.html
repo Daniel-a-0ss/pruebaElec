@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Proyecto académico de cuarto semestre: conceptos de electricidad, electrónica digital, sistemas numéricos, álgebra booleana y lógica combinacional."
+    />
+    <meta name="theme-color" content="#f6f5f0" />
+    <title>Electricidad y electrónica digital — proyecto académico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header" id="inicio">
+      <a class="brand" href="#inicio" aria-label="Proyecto de electricidad y electrónica digital, volver al inicio">
+        <span class="brand-mark" aria-hidden="true">ED</span>
+        <span class="brand-name">Electricidad <span>y electrónica digital</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#ruta">Electricidad</a>
+        <a href="#explora">Electrónica digital</a>
+        <a href="#laboratorio">Ejercicios interactivos</a>
+      </nav>
+      <span class="course-badge">PROYECTO DE AULA · 4.º SEMESTRE</span>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> FUNDAMENTOS · ELECTRICIDAD Y SISTEMAS DIGITALES</div>
+          <h1>De la electricidad<br />a la lógica<br /><span>digital.</span></h1>
+          <p>
+            Recorrido por los conceptos estudiados en clase: desde la estructura atómica y la corriente eléctrica hasta las puertas lógicas y el diseño de circuitos combinacionales.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#ruta">Ver contenidos del curso <span>↓</span></a>
+            <span class="reading-time">APUNTES Y EJEMPLOS INTERACTIVOS</span>
+          </div>
+          <div class="hero-note">
+            <span class="note-doodle" aria-hidden="true">↳</span>
+            <span>De los conceptos físicos<br /><strong>a la lógica digital.</strong></span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Ilustración de una bombilla conectada a un circuito">
+          <div class="art-caption"><span>FIG. 01</span> TRANSFORMACIÓN DE ENERGÍA ELÉCTRICA</div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="art-spark spark-one">✳</div>
+          <div class="art-spark spark-two">✳</div>
+          <div class="art-plus plus-one">+</div>
+          <div class="art-plus plus-two">+</div>
+          <svg class="bulb-illustration" viewBox="0 0 360 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bombilla amarilla iluminada">
+            <path d="M92 159C92 106.533 134.533 64 187 64C239.467 64 282 106.533 282 159C282 193.087 264.05 222.98 237.108 240.73C226.116 247.964 219 260.287 219 273H155C155 260.287 147.884 247.964 136.892 240.73C109.95 222.98 92 193.087 92 159Z" fill="#F7C84A" stroke="#1D2725" stroke-width="5"/>
+            <path d="M155 274H219V303H155V274Z" fill="#F4F1E8" stroke="#1D2725" stroke-width="5"/>
+            <path d="M158 304H216V326C216 331.523 211.523 336 206 336H168C162.477 336 158 331.523 158 326V304Z" fill="#D6D8CD" stroke="#1D2725" stroke-width="5"/>
+            <path d="M172 275L184 290L173 302M202 275L190 290L201 302M171 315H203" stroke="#1D2725" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M187 133V238M155 169L187 205L219 169" stroke="#B88018" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M187 128V136" stroke="#1D2725" stroke-width="7" stroke-linecap="round"/>
+            <path d="M187 25V44M69 68L83 82M305 68L291 82M36 162H57M338 162H317" stroke="#E76B4B" stroke-width="5" stroke-linecap="round"/>
+            <path d="M185 356V372M160 354L153 369M214 354L221 369" stroke="#52766C" stroke-width="4" stroke-linecap="round"/>
+            <circle class="bulb-glow" cx="187" cy="158" r="115" fill="#F7C84A" fill-opacity=".09"/>
+          </svg>
+          <div class="circuit-trace trace-a"></div>
+          <div class="circuit-trace trace-b"></div>
+          <div class="hero-sticker"><span>CONCEPTO</span><br />ENERGÍA<br />→ LUZ + CALOR</div>
+          <div class="art-footer"><span>REPRESENTACIÓN: LÁMPARA ELÉCTRICA</span><span>FIG. 01</span></div>
+        </div>
+        <div class="hero-bottom">
+          <span>CONTENIDO DEL PROYECTO</span>
+          <span class="scroll-line"></span>
+          <span>DEL ÁTOMO AL CIRCUITO</span>
+        </div>
+      </section>
+
+      <section class="intro-strip" aria-label="Organización del contenido">
+        <p>Temas vistos en clase,<br /><span>organizados paso a paso.</span></p>
+        <div class="intro-detail"><span class="detail-symbol">01 → 02 → 03</span><span>Electricidad básica<br />Sistemas digitales<br />Circuitos lógicos</span></div>
+        <span class="intro-coordinates">MATERIAL DE APOYO · CUARTO SEMESTRE</span>
+      </section>
+
+      <section class="learning-section section-wrap" id="ruta">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow">01 — CONCEPTOS DE ELECTRICIDAD</div>
+            <h2>Materia, carga<br />y <span>corriente.</span></h2>
+          </div>
+          <p>Conceptos fundamentales para explicar el comportamiento de las cargas y la energía eléctrica en un circuito.</p>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson-card card-particles reveal">
+            <div class="card-topline"><span>01 / ESTRUCTURA ATÓMICA</span><span class="card-arrow">01</span></div>
+            <div class="particle-art" aria-hidden="true">
+              <span class="particle particle-proton">+</span><span class="particle particle-neutron"></span>
+              <span class="particle particle-electron">−</span><span class="particle particle-electron electron-two">−</span>
+              <span class="particle-orbit"></span><span class="particle-orbit orbit-tilt"></span>
+            </div>
+            <div class="card-copy">
+              <div class="card-label">MATERIA Y PARTÍCULAS SUBATÓMICAS</div>
+              <h3>El átomo y<br />sus partículas.</h3>
+              <p>Protones, electrones y neutrones: carga, ubicación y función de cada partícula en la estructura atómica.</p>
+              <button class="text-link lesson-open" data-topic="atomos">Consultar explicación <span>→</span></button>
+            </div>
+          </article>
+          <article class="lesson-card card-charge reveal">
+            <div class="card-topline"><span>02 / CARGA ELÉCTRICA</span><span class="card-arrow">02</span></div>
+            <div class="charge-art" aria-hidden="true">
+              <span class="charge-plus">+</span><span class="charge-minus">−</span>
+              <svg viewBox="0 0 240 130" fill="none"><path d="M50 40C88 4 152 4 190 40M50 65C88 29 152 29 190 65M50 90C88 54 152 54 190 90" stroke="currentColor" stroke-width="2" stroke-dasharray="4 6"/><path d="M178 37L191 40L186 52M178 62L191 65L186 77M178 87L191 90L186 102" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="charge-point point-left">+</span><span class="charge-point point-right">−</span>
+            </div>
+            <div class="card-copy">
+              <div class="card-label">INTERACCIÓN ENTRE CARGAS</div>
+              <h3>Carga eléctrica<br />y ley de Coulomb.</h3>
+              <p>Signo de la carga, atracción, repulsión y relación entre fuerza eléctrica, distancia y magnitud de las cargas.</p>
+              <button class="text-link lesson-open" data-topic="coulomb">Consultar explicación <span>→</span></button>
+            </div>
+          </article>
+          <article class="lesson-card card-current reveal">
+            <div class="card-topline"><span>03 / CORRIENTE ELÉCTRICA</span><span class="card-arrow">03</span></div>
+            <div class="current-art" aria-hidden="true">
+              <div class="current-track"><span class="current-dot"></span><span class="current-dot"></span><span class="current-dot"></span><span class="current-dot"></span><span class="current-dot"></span><span class="track-arrow">→</span></div>
+              <div class="current-readout"><span>FLUJO DE CARGA</span><strong>en movimiento<span class="blink">_</span></strong></div>
+              <div class="current-wave"><svg viewBox="0 0 240 50"><path d="M0 25H25C38 25 38 7 51 7S64 43 77 43S90 25 103 25H129C142 25 142 7 155 7S168 43 181 43S194 25 207 25H240" stroke="currentColor" stroke-width="2.5" fill="none"/></svg></div>
+            </div>
+            <div class="card-copy">
+              <div class="card-label">TIPOS DE CORRIENTE Y MAGNITUDES</div>
+              <h3>Corriente y<br />unidades eléctricas.</h3>
+              <p>Corriente continua, alterna y pulsante. Voltaje, corriente, resistencia, potencia y energía.</p>
+              <button class="text-link lesson-open" data-topic="corriente">Consultar explicación <span>→</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-band">
+        <span class="quote-mark">“</span>
+        <p>La energía se transforma.<br />En un circuito, <span>la carga se desplaza.</span></p>
+        <div class="quote-caption">CORRIENTE ELÉCTRICA Y TRANSFORMACIÓN DE ENERGÍA</div>
+        <span class="quote-spark">✳</span>
+      </section>
+
+      <section class="explore-section section-wrap" id="explora">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow">02 — FUNDAMENTOS DE ELECTRÓNICA DIGITAL</div>
+            <h2>Sistemas, álgebra<br />y <span>lógica.</span></h2>
+          </div>
+          <p>Representación y operaciones numéricas, herramientas del álgebra de Boole y métodos para analizar y simplificar circuitos lógicos.</p>
+        </div>
+        <div class="digital-layout">
+          <div class="digital-intro reveal">
+            <div class="digital-index">SISTEMA BINARIO · BASE 2 <span>↘</span></div>
+            <div class="bit-stack" aria-hidden="true"><span>1</span><span>0</span><span class="bit-accent">1</span><span>1</span><span>0</span><span>0</span><span class="bit-accent">1</span></div>
+            <h3>De los sistemas<br />numéricos a la<br /><span>lógica binaria.</span></h3>
+            <p>Los circuitos digitales procesan información utilizando dos niveles lógicos: 0 y 1.</p>
+            <a href="#laboratorio" class="button button-outline">Ir a los ejercicios <span>↓</span></a>
+          </div>
+          <div class="digital-topics">
+            <article class="topic-row reveal"><span class="topic-number">01</span><div><h3>Sistemas numéricos y operaciones</h3><p>Conversión entre binario, decimal y hexadecimal; suma y resta en binario.</p><div class="topic-tags"><span>BASE 2</span><span>BASE 10</span><span>BASE 16</span><span>ARITMÉTICA BINARIA</span></div><button class="text-link digital-topic-open" data-topic="numericos">Ver explicación y ejemplo <span>→</span></button></div><span class="topic-icon">101<br /><small>→ 5</small></span></article>
+            <article class="topic-row reveal"><span class="topic-number">02</span><div><h3>Puertas y funciones lógicas</h3><p>Tablas de verdad, símbolos y expresiones para las operaciones lógicas elementales.</p><div class="topic-tags"><span>AND</span><span>OR</span><span>NOT</span><span>NAND · NOR · XOR · XNOR</span></div><button class="text-link digital-topic-open" data-topic="puertas">Ver explicación y ejemplo <span>→</span></button></div><span class="topic-icon gate-icon">∧<br /><small>∨ ¬</small></span></article>
+            <article class="topic-row reveal"><span class="topic-number">03</span><div><h3>Álgebra booleana y simplificación</h3><p>Leyes y teoremas de Boole para reducir expresiones y obtener circuitos equivalentes.</p><div class="topic-tags"><span>IDENTIDADES</span><span>DE MORGAN</span><span>MAPAS DE KARNAUGH</span></div><button class="text-link digital-topic-open" data-topic="boole">Ver leyes y ejemplo <span>→</span></button></div><span class="topic-icon">A·B<br /><small>A + B</small></span></article>
+            <article class="topic-row reveal"><span class="topic-number">04</span><div><h3>Lógica combinacional</h3><p>Análisis y diseño de circuitos cuya salida depende de las entradas presentes.</p><div class="topic-tags"><span>TABLA DE VERDAD</span><span>FUNCIÓN</span><span>CIRCUITO</span></div><button class="text-link digital-topic-open" data-topic="combinacional">Ver método y ejemplo <span>→</span></button></div><span class="topic-icon circuit-icon">⊞<br /><small>⊙ ◇</small></span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lab-section" id="laboratorio">
+        <div class="lab-inner">
+          <div class="lab-heading reveal">
+            <div class="eyebrow eyebrow-light">03 — APLICACIÓN DE FUNCIONES LÓGICAS</div>
+            <h2>Simulación de<br />la puerta <span>AND.</span></h2>
+            <p>Cambia los valores de entrada, observa la salida y contrasta el resultado con la tabla de verdad.</p>
+            <div class="lab-key"><span class="key-dot"></span> SIMULADOR INTERACTIVO <span class="key-line"></span> FUNCIÓN Y = A · B</div>
+          </div>
+          <div class="lab-board reveal">
+            <div class="board-header"><span>SIMULACIÓN DE CIRCUITO COMBINACIONAL / AND</span><span class="board-live"><span></span> EN LÍNEA</span></div>
+            <div class="circuit">
+              <div class="input-column">
+                <div class="input-node">
+                  <span class="input-label">ENTRADA A</span>
+                  <button class="switch" data-input="a" role="switch" aria-checked="false" aria-label="Cambiar entrada A"><span></span></button>
+                  <span class="input-state" id="state-a">0 · APAGADO</span>
+                </div>
+                <div class="input-node">
+                  <span class="input-label">ENTRADA B</span>
+                  <button class="switch" data-input="b" role="switch" aria-checked="false" aria-label="Cambiar entrada B"><span></span></button>
+                  <span class="input-state" id="state-b">0 · APAGADO</span>
+                </div>
+              </div>
+              <div class="wire-system" aria-hidden="true">
+                <span class="wire wire-a"></span><span class="wire wire-b"></span>
+                <span class="wire wire-out"></span><span class="wire-node wire-node-a"></span>
+                <span class="wire-node wire-node-b"></span><span class="wire-node wire-node-c"></span>
+              </div>
+              <div class="gate">
+                <svg viewBox="0 0 128 106" aria-label="Símbolo de puerta AND"><path d="M8 8H59C88.271 8 112 28.594 112 54S88.271 100 59 100H8V8Z" stroke="currentColor" stroke-width="3"/><path d="M0 33H8M0 75H8M112 54H128" stroke="currentColor" stroke-width="3"/><text x="52" y="61" fill="currentColor" font-size="17" font-family="DM Mono, monospace">AND</text></svg>
+              </div>
+              <div class="output-node"><span class="input-label">SALIDA</span><span class="output-lamp" id="output-lamp"></span><strong id="output-value">0</strong><span class="input-state" id="output-state">ESPERANDO SEÑAL</span></div>
+            </div>
+            <div class="truth-table-wrap">
+              <div class="table-title">TABLA DE VERDAD <span>Y = A · B</span></div>
+              <table class="truth-table">
+                <thead><tr><th>A</th><th>B</th><th>Y</th></tr></thead>
+                <tbody>
+                  <tr data-row="00"><td>0</td><td>0</td><td>0</td></tr>
+                  <tr data-row="01"><td>0</td><td>1</td><td>0</td></tr>
+                  <tr data-row="10"><td>1</td><td>0</td><td>0</td></tr>
+                  <tr data-row="11"><td>1</td><td>1</td><td>1</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="board-footer"><span id="lab-explanation">Una puerta AND produce 1 únicamente cuando A = 1 y B = 1.</span><span>CAMBIA A Y B</span></div>
+          </div>
+        </div>
+        <div class="lab-decoration" aria-hidden="true">01001<br />10110<br />00101</div>
+      </section>
+
+      <section class="number-lab section-wrap">
+        <div class="number-copy reveal">
+          <div class="eyebrow">EJERCICIO — CONVERSIÓN ENTRE BASES</div>
+          <h2>Decimal a<br /><span>binario.</span></h2>
+          <p>Introduce un número entero entre 0 y 255. La conversión se representa con ocho bits.</p>
+          <label for="decimal-input">PRUEBA CON UN NÚMERO DEL 0 AL 255</label>
+          <div class="converter-input"><input id="decimal-input" type="number" min="0" max="255" value="42" aria-label="Número decimal del 0 al 255" /><span>DECIMAL <button id="convert-button" aria-label="Convertir número">↗</button></span></div>
+          <div class="converter-result"><span>EN BINARIO</span><strong id="binary-output" aria-live="polite">00101010</strong></div>
+        </div>
+        <div class="binary-art reveal" aria-hidden="true">
+          <div class="binary-grid">
+            <span>0</span><span>1</span><span>0</span><span class="binary-lit">1</span>
+            <span>1</span><span class="binary-lit">0</span><span>0</span><span>1</span>
+            <span>0</span><span>0</span><span class="binary-lit">1</span><span>0</span>
+            <span class="binary-lit">1</span><span>1</span><span>0</span><span>0</span>
+            <span>1</span><span>0</span><span>1</span><span class="binary-lit">1</span>
+            <span>0</span><span class="binary-lit">1</span><span>0</span><span>1</span>
+          </div>
+          <div class="binary-stamp">BITS<br /><span>IN MOTION</span></div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="final-spark" aria-hidden="true">✳</div>
+        <div class="eyebrow">YA SABES MÁS DE LO QUE CREES</div>
+        <h2>El siguiente circuito<br /><span>lo diseñas tú.</span></h2>
+        <a href="#ruta" class="button button-dark">Volver a los contenidos <span>↑</span></a>
+        <div class="final-foot"><span>PROYECTO ACADÉMICO · CUARTO SEMESTRE</span><span>ELECTRICIDAD · ELECTRÓNICA DIGITAL · LÓGICA COMBINACIONAL</span></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">ED</span><span class="brand-name">Electricidad <span>y electrónica digital</span></span></a>
+      <span>PROYECTO DE CLASE · MATERIAL DE APOYO</span>
+      <span>ESTUDIANTE: [TU NOMBRE] · GRUPO: [TU GRUPO]</span>
+    </footer>
+
+    <dialog class="lesson-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" aria-label="Cerrar lección">×</button>
+      <div class="eyebrow" id="dialog-eyebrow">UN POCO MÁS DE CERCA</div>
+      <h2 id="dialog-title"></h2>
+      <p class="dialog-body"></p>
+      <div class="dialog-fact"></div>
+    </dialog>
+  </body>
+</html>
